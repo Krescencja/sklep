@@ -120,7 +120,8 @@ header {
 }
 
 .products-items {
-    max-width: 450px;
+    position: relative;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,6 +130,18 @@ header {
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 20px;
+    margin: 20px;
+}
+
+.product-item-sale-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    color: #800080;
+    padding: 5px 15px;
+    border-radius: 10px;
+    opacity: 0.8;
 }
 
 .products-items:hover {
@@ -136,7 +149,7 @@ header {
 }
 
 .products-items img {
-    width: 260px;
+    width: 220px;
 }
 
 .product-name {
@@ -148,7 +161,6 @@ header {
     color: gray;
     font-size: 15px;
     line-height: 22px;
-    width: 90%;
 }
 
 .product-price {
